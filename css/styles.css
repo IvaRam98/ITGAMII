@@ -1,0 +1,539 @@
+html {
+  font-size: 62.5;
+}
+
+body {
+  font-size: 16px;
+}
+
+section {
+  text-align: center;
+
+
+}
+
+.text_center {
+  text-align: center;
+
+}
+
+section p {
+  text-align: justify;
+
+
+}
+
+.containers {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
+}
+
+.contents {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.body {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.cover {
+  width: 400px;
+  height: 400px;
+
+  margin-top: 50px;
+  display: flex;
+}
+
+.centrado {
+  margin: right;
+}
+
+
+
+/** Cards **/
+.box {
+  width: 350px;
+  height: 300px;
+  box-shadow: -1px 0 10px #0000;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.box h2 {
+  font-size: 100%;
+  color: black;
+}
+
+.box p {
+  font-size: 90%;
+}
+
+.imagen {
+  width: 300px;
+  height: 200px;
+  display: flex;
+}
+
+/** Imagen Personal en Instituto.html**/
+
+.imgpersonal {
+  width: 310px;
+  height: 310px;
+  border-radius: 190px;
+  border: 3px;
+  border-color: #1b396a;
+  border-style: ridge;
+  display: block;
+  margin: auto;
+  margin-top: 50px;
+}
+
+
+/** Tabla de directorio en itgamii.html**/
+.directorio {
+  margin: auto;
+}
+
+.directorio {
+  font-family: "Times New Roman", Times, serif;
+  border: 1px solid #FFFFFF;
+  width: 350px;
+  height: 200px;
+  text-align: left;
+  border-collapse: collapse;
+  white-space: nowrap
+}
+
+.directorio td,
+.directorio th {
+  border: 1px solid #FFFFFF;
+  padding: 2px 9px;
+}
+
+.directorio tbody td {
+  font-size: 13px;
+}
+
+.directorio tr:nth-child(even) {
+  background: #D0E4F5;
+}
+
+.directorio thead {
+  background: #1B396A;
+  border-bottom: 0px solid #FFFFFF;
+}
+
+.directorio thead:nth-child(even) {
+  background: #A2A0A0;
+}
+
+.directorio thead th {
+  font-size: 17px;
+  font-weight: bold;
+  color: #FFFFFF;
+  text-align: center;
+  border-left: 3px solid #FFFFFF;
+}
+
+.directorio thead th:first-child {
+  border-left: none;
+}
+
+.directorio tfoot td {
+  font-size: 14px;
+}
+
+
+/**Raiz Iconos SubPlaneacion **/
+
+.ch-item {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  cursor: default;
+  box-shadow:
+    inset 0 0 0 16px rgba(255, 255, 255, 0.6),
+    0 1px 2px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s ease-in-out;
+}
+
+.ch-grid {
+  margin: 20px 0 0 0;
+  padding: 0;
+  list-style: none;
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+
+.ch-grid:after,
+.ch-item:before {
+  content: '';
+  display: table;
+}
+
+.ch-grid:after {
+  clear: both;
+}
+
+.ch-grid li {
+  width: 220px;
+  height: 220px;
+  display: inline-block;
+  margin: 20px;
+}
+
+.ch-img-1 {
+  background-image: url(../img/Departamentos/serviciosescolares.png);
+  background-position: center;
+  background-size: cover;
+
+}
+
+.ch-img-2 {
+  background-image: url(../img/Departamentos/extra.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.ch-img-3 {
+  background-image: url(../img/Departamentos/gestion.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.ch-img-4 {
+  background-image: url(../img/Departamentos/idiomas.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.ch-img-5 {
+  background-image: url(../img/Departamentos/planeacion.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.ch-img-6 {
+  background-image: url(../img/Departamentos/informacion.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.ch-img-7 {
+  background-image: url(../img/Departamentos/comunicacion.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.ch-info {
+  position: absolute;
+  background: rgba(63, 147, 147, 0.8);
+  width: inherit;
+  height: inherit;
+  border-radius: 50%;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.4s ease-in-out;
+  transform: scale(0);
+}
+
+.ch-info h3 {
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 20px;
+  margin: 0 30px;
+  padding: 45px 0 0 0;
+  height: 140px;
+  font-family: 'Open Sans', Arial, sans-serif;
+  text-shadow:
+    0 0 1px #fff,
+    0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.ch-info p {
+  color: #fff;
+  padding: 10px 5px;
+  font-style: italic;
+  margin: 0 30px;
+  font-size: 12px;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  opacity: 0;
+  transition: all 1s ease-in-out 0.4s;
+}
+
+.ch-info p a {
+  display: block;
+  color: rgba(255, 255, 255, 0.7);
+  font-style: normal;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 9px;
+  letter-spacing: 1px;
+  padding-top: 4px;
+  font-family: 'Open Sans', Arial, sans-serif;
+}
+
+.ch-info p a:hover {
+  color: rgba(255, 242, 34, 0.8);
+}
+
+.ch-item:hover {
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 255, 255, 0.1),
+    0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.ch-item:hover .ch-info {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.ch-item:hover .ch-info p {
+  opacity: 1;
+}
+
+/** Iconos Academica **/
+
+
+.cch-img-1 {
+  background-image: url(../img/Departamentos/DESARROLLO.png);
+  background-position: center;
+  background-size: cover;
+
+}
+
+.cch-img-2 {
+  background-image: url(../img/Departamentos/DIV.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.cch-img-3 {
+  background-image: url(../img/Departamentos/ECONOMICOADMINISTRATIVO.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.cch-img-4 {
+  background-image: url(../img/Departamentos/cienciasbasicas.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.cch-img-5 {
+  background-image: url(../img/Departamentos/ingenierias.png);
+  background-position: center;
+  background-size: cover;
+}
+
+
+
+/** Icono Administrativa**/
+
+
+
+.ccch-img-1 {
+  background-image: url(../img/Departamentos/recursosfinancieros.png);
+  background-position: center;
+  background-size: cover;
+
+}
+
+.ccch-img-2 {
+  background-image: url(../img/Departamentos/recursoshumanos.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.ccch-img-3 {
+  background-image: url(../img/Departamentos/recursosMATERIALES.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.ccch-img-4 {
+  background-image: url(../img/Departamentos/centrodecomputo.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.ccch-img-5 {
+  background-image: url(../img/Departamentos/libro.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+
+/** Servicios de Escolares**/
+.cccch-img-1 { 
+	background-image: url(../img/Departamentos/becas.png);
+    background-position: center;
+    background-size:cover;
+   
+}
+
+.cccch-img-2 { 
+	background-image: url(../img/Departamentos/titulacion.png);
+    background-position: center;
+    background-size:cover;
+}
+
+.cccch-img-3 { 
+	background-image: url(../img/Departamentos/servicios.png);
+    background-position: center;
+    background-size:cover;
+}
+.cccch-img-4 { 
+	background-image: url(../img/Departamentos/inscripcion.png);
+    background-position: center;
+    background-size:cover;
+}
+
+.cccch-img-5 { 
+	background-image: url(../img/Departamentos/imss.png);
+    background-position: center;
+    background-size:cover;
+}
+
+/** Imagen de admision.html **/
+
+.imagen-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.imagen-container img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/** Inscripcion **/
+.inscripcion {
+  margin: auto; 
+  }
+  .inscripcion {
+    font-family: "Times New Roman", Times, serif;
+    border: 1px solid #FFFFFF;
+    width: 350px;
+    height: 200px;
+    text-align:center;
+    border-collapse: collapse;
+    white-space: nowrap
+  }
+  .inscripcion td, .inscripcion th {
+    border: 1px solid #FFFFFF;
+    padding: 2px 9px;
+  }
+  .inscripcion tbody td {
+    font-size: 13px;
+  }
+  .inscripcion tr:nth-child(even) {
+    background: #D0E4F5;
+  }
+  .inscripcion thead {
+    background: #1B396A;
+    border-bottom: 0px solid #FFFFFF;
+  }
+  .inscripcion thead th {
+    font-size: 17px;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-align: center;
+    border-left: 3px solid #FFFFFF;
+  }
+  .inscripcion thead th:first-child {
+    border-left: none;
+  }
+  .inscripcion tfoot td {
+    font-size: 14px;
+  }
+  
+  div.dir_energia {
+    background-color: rgba(0,0,0,0.05);
+    padding: 1%;
+    width: 70%;
+    margin: 1% auto;}
+
+    div.dir_energia h1.titulo {
+      color: #0b2460;
+      font-size: 1.5em;
+  }
+  
+  div.dir_energia h1, h2 {
+      text-align: center;
+  }
+
+  /** Botnos para Oferta Educativa**/
+
+  .button-redMX {
+    background: #cf242a;
+    border: 1px solid rgba(255, 255, 255, 0.45);
+    -webkit-box-shadow: 0px 0px 0px 2px #cf242a, 0px 8px 8px -6px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 0px 2px #cf242a, 0px 8px 8px -6px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 0px 2px #cf242a, 0px 8px 8px -6px rgba(0, 0, 0, 0.75);
+}
+.button-blueMX {
+  background: #1C2861;
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  -webkit-box-shadow: 0px 0px 0px 2px #dcdcdc, 0px 8px 8px -6px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 0px 2px#dcdcdc, 0px 8px 8px -6px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 0px 2px #dcdcdc, 0px 8px 8px -6px rgba(0, 0, 0, 0.75);
+}
+
+.button-grayMX {
+  background: #585858;
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  -webkit-box-shadow: 0px 0px 0px 2px #E6E6E6, 0px 8px 8px -6px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 0px 2px #E6E6E6, 0px 8px 8px -6px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 0px 2px #E6E6E6, 0px 8px 8px -6px rgba(0, 0, 0, 0.75);
+}
+.button {
+    color: white;
+    border-radius: none;
+    font-size: .8em;
+    padding: 3px 25px 3px 25px;
+    text-transform: uppercase;
+}
+
+.ventana{
+  background-color: #1b396a;
+  width: 30%;
+  color: rgba(255, 255, 255, 1);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  text-align: center;
+  padding: 33px;
+  min-height: 250px;
+  border-radius: 22px;
+  position: absolute;
+  left: 34%;
+  top: 13%;
+  display: NONE;
+border: 2px solid black;
+border-color: #fff;
+  
+}
+
+
+.ventanatitulo{
+  color: white;
+}
+#cerrar{
+  position: absolute;
+  right: 3px;
+  top: 1px;
+
+}
+
